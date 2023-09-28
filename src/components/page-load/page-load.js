@@ -1,3 +1,5 @@
+import './page-load.css';
+
 export default function pageLoad() {
   const contentDiv = document.querySelector('#content');
 

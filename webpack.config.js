@@ -8,11 +8,30 @@ module.exports = {
     // This tells webpack-dev-server to serve the files from the dist directory on localhost:8080
     static: './dist',
   },
-  // plugins: [new htmlWebpackPlugin({ template: './dist/index.html' })],
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
+  },
+  // module: {
+  //   rules: [
+  //     {
+  //       test: /\.css$/i,
+  //       use: ['style-loader', 'css-loader'],
+  //     },
+  //     {
+  //       test: /\.(png|svg|jpg|jpeg|gif)$/i,
+  //       type: 'asset/resource',
+  //     },
+  //   ],
+  // },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
   },
   // optimization.runtimeChunk: 'single' is needed only if we have more than one entrypoint on a single HTML page.
   // optimization: {

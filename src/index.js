@@ -1,4 +1,5 @@
-import pageLoad from './page-load';
+import pageLoad from './components/page-load/page-load';
+import './assets/css/index.css';
 
 pageLoad();
 

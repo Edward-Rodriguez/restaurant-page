@@ -4,6 +4,7 @@
 html {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  height: 100%;
 }
 
 *,
@@ -12,4 +13,46 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  grid-template-areas:
+    'nav'
+    'content'
+    'footer';
+  min-height: 100%;
+  /* background-image: url('../images/icecream.jpg'); */
+  background-image: url('../images/icecream-blur_edges.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+nav {
+  grid-area: nav;
+}
+
+#content {
+  grid-area: content;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: rgba(0, 0, 0, 0.638);
+  padding: 12px;
+}
+
+footer p:last-child {
+  width: 100%;
+  text-align: center;
+}
+
+footer a {
+  color: inherit;
 }

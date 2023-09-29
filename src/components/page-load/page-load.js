@@ -4,11 +4,27 @@ export default function pageLoad() {
   const contentDiv = document.querySelector('#content');
 
   // navigation bar
-  const nav = document.createElement('nav');
+  const nav = document.querySelector('#navbar');
   const navList = document.createElement('ul');
-  const navItems = ['About', 'Treats', 'Hours & Locations', 'Contact'];
-  navItems.forEach((navItem) => {
+
+  // icon & heading (nav items)
+  const restaurantName = 'Chill Bliss Ice Cream Shop';
+  const heading = document.createElement('h1');
+  heading.textContent = restaurantName;
+  heading.setAttribute('id', 'heading');
+  const icon = document.createElement('img');
+  [icon, heading].forEach((item) => {
     const listItem = document.createElement('li');
+    listItem.classList.add('nav-item');
+    listItem.appendChild(item);
+    navList.appendChild(listItem);
+  });
+
+  // menu links (nav items)
+  const menuItems = ['About', 'Treats', 'Hours & Locations', 'Contact'];
+  menuItems.forEach((navItem) => {
+    const listItem = document.createElement('li');
+    listItem.classList.add('nav-item');
     const anchor = document.createElement('a');
     anchor.textContent = navItem;
     anchor.href = `/${replaceWhitespace(navItem)}`;
@@ -19,13 +35,12 @@ export default function pageLoad() {
 
   // header
   const header = document.createElement('header');
-  const heading = document.createElement('h1');
-  const name = 'Chill Bliss Ice Cream Shop';
   const headline = document.createElement('p');
-  heading.textContent = name;
-  headline.textContent = `Indulge in Scoopfuls of Frozen Delight at ${name}`;
-  header.append(heading, headline);
-
+  const headlineText = document.createElement('em');
+  headlineText.textContent = `Indulge in Scoopfuls of Frozen Delight at ${restaurantName}`;
+  headline.classList.add('headline');
+  headline.appendChild(headlineText);
+  header.append(headline);
   contentDiv.append(nav, header);
 }
 

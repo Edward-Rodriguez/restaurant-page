@@ -17,6 +17,10 @@ nav > ul {
   font-weight: 600;
 }
 
+.nav-item:first-child {
+  height: 48px;
+}
+
 header {
   text-align: center;
   font-family: 'Merriweather', serif;
@@ -41,6 +45,11 @@ header > nav {
 
 #heading {
   text-align: left;
+}
+
+#logo {
+  height: 48px;
+  width: auto;
 }
 
 footer {

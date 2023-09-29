@@ -44,13 +44,21 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  color: rgba(0, 0, 0, 0.638);
+  color: rgba(0, 0, 0, 0.639);
   padding: 12px;
 }
 
-footer p:last-child {
-  width: 100%;
+.copyright {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.copyright img {
+  content: url('../images/github-mark.svg');
+  max-height: 16px;
 }
 
 footer a {

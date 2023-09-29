@@ -1,4 +1,5 @@
 import './page-load.css';
+import Image from '../../assets/images/logo-ice-cream.svg';
 
 export default function pageLoad() {
   const contentDiv = document.querySelector('#content');
@@ -13,6 +14,8 @@ export default function pageLoad() {
   heading.textContent = restaurantName;
   heading.setAttribute('id', 'heading');
   const icon = document.createElement('img');
+  icon.setAttribute('id', 'logo');
+  icon.src = Image;
   [icon, heading].forEach((item) => {
     const listItem = document.createElement('li');
     listItem.classList.add('nav-item');
@@ -41,6 +44,7 @@ export default function pageLoad() {
   headline.classList.add('headline');
   headline.appendChild(headlineText);
   header.append(headline);
+
   contentDiv.append(nav, header);
 }
 

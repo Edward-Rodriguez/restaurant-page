@@ -24,13 +24,16 @@ export default function pageLoad() {
   });
 
   // menu links (nav items)
-  const menuItems = ['About', 'Treats', 'Hours & Locations', 'Contact'];
+  const menuItems = ['About', 'Menu', 'Hours & Locations', 'Contact'];
   menuItems.forEach((navItem) => {
     const listItem = document.createElement('li');
     listItem.classList.add('nav-item');
     const anchor = document.createElement('a');
     anchor.textContent = navItem;
-    anchor.href = `/${replaceWhitespace(navItem)}`;
+    anchor.setAttribute(
+      'id',
+      navItem.replace(/[!@#\$%\^\&*\)\(+=._\-\s]+/g, '').toLowerCase()
+    );
     listItem.appendChild(anchor);
     navList.appendChild(listItem);
   });
@@ -45,10 +48,5 @@ export default function pageLoad() {
   headline.appendChild(headlineText);
   header.append(headline);
 
-  contentDiv.append(nav, header);
-}
-
-function replaceWhitespace(string) {
-  const regex = /\s+/;
-  return string.replace(regex, '%');
+  contentDiv.append(header);
 }

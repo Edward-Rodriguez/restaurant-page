@@ -17,6 +17,10 @@ nav > ul {
   font-weight: 600;
 }
 
+.nav-item > a:hover {
+  cursor: pointer;
+}
+
 .nav-item:first-child {
   height: 48px;
 }

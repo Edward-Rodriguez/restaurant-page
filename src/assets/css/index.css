@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Rancho&family=Roboto&display=swap');
 
 html {
   box-sizing: border-box;
@@ -35,6 +34,7 @@ nav {
 
 #content {
   grid-area: content;
+  justify-self: center;
 }
 
 footer {
@@ -63,4 +63,10 @@ footer {
 
 footer a {
   color: inherit;
+}
+
+@media only screen and (min-width: 1260px) {
+  body {
+    padding: 0px 20vh;
+  }
 }

@@ -6,9 +6,9 @@
     );
   grid-template-areas:
     'msg img'
-    'msg img';
+    'msg .';
   padding: 16px 48px 0px 48px;
-  gap: 48px;
+  column-gap: 48px;
   justify-items: center;
   font-family: 'Roboto', serif;
 }

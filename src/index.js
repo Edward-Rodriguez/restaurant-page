@@ -1,24 +1,25 @@
-import { default as initPageLoad } from './components/page-load/page-load';
+import { default as homePageLoad } from './components/homepage/homepage';
 import loadAbout from './components/about/about';
 import './assets/css/index.css';
 
 const displayController = (() => {
-  initPageLoad(); // initial page load
+  homePageLoad(); // initial page load
 
   const contentDiv = document.querySelector('#content');
   const nav = document.querySelector('nav');
-  const logo = document.querySelector('#logo');
-  const aboutLink = document.querySelector('#about');
-  const menuLink = document.querySelector('#menu');
-  const hoursLink = document.querySelector('#hourslocations');
-  const contactLink = document.querySelector('#contact');
 
   function clickHandlerNav(ev) {
     ev.preventDefault();
     const selectedLink = ev.target.id;
-    console.log(selectedLink);
     contentDiv.textContent = '';
-    contentDiv.append(loadAbout());
+
+    switch (selectedLink) {
+      case 'about':
+        contentDiv.append(loadAbout());
+        break;
+      default:
+        contentDiv.append(homePageLoad());
+    }
   }
 
   nav.addEventListener('click', clickHandlerNav);

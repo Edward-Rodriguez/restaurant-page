@@ -1,7 +1,7 @@
-import './page-load.css';
+import './homepage.css';
 import Image from '../../assets/images/logo-ice-cream.svg';
 
-export default function pageLoad() {
+export default function homepageLoad() {
   const contentDiv = document.querySelector('#content');
 
   // navigation bar

@@ -1,0 +1,26 @@
+#footer {
+  grid-area: footer;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: rgba(0, 0, 0, 0.639);
+  padding: 12px;
+}
+
+.copyright {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.copyright img {
+  max-height: 16px;
+}
+
+#footer a {
+  color: inherit;
+}

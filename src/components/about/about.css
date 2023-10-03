@@ -1,29 +1,21 @@
 .container {
   display: grid;
-  grid-template: min-content min-content / minmax(300px, 500px) minmax(
-      300px,
-      600px
-    );
-  grid-template-areas:
-    'msg img'
-    'msg .';
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 1280px;
   padding: 16px 48px 0px 48px;
-  column-gap: 48px;
+  gap: 48px;
   justify-items: center;
   font-family: 'Roboto', serif;
 }
 
 .msg-container {
-  grid-area: msg;
   padding: 24px;
   background-color: white;
   white-space: preserve-breaks;
-  backdrop-filter: blur(5px);
   line-height: 1.5;
 }
 
 .img-container {
-  grid-area: img;
   padding: 24px;
   text-align: right;
   background-color: white;

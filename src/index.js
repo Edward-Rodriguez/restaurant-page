@@ -1,5 +1,6 @@
-import { default as loadHomePage } from './components/homepage/homepage';
-import { default as loadFooter } from './components/footer/footer';
+import loadHomePage from './components/homepage/homepage';
+import loadFooter from './components/footer/footer';
+import loadNav from './components/nav/nav';
 import loadAbout from './components/about/about';
 import './assets/css/index.css';
 
@@ -9,7 +10,8 @@ const displayController = (() => {
   const footer = document.querySelector('footer');
 
   //inital page load
-  loadHomePage(); // initial page load
+  nav.append(loadNav());
+  contentDiv.append(loadHomePage()); // initial page load
   footer.append(loadFooter());
 
   function clickHandlerNav(ev) {

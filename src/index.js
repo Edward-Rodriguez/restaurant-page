@@ -11,20 +11,25 @@ const displayController = (() => {
 
   //inital page load
   nav.append(loadNav());
-  contentDiv.append(loadHomePage()); // initial page load
+  contentDiv.append(loadHomePage());
   footer.append(loadFooter());
 
   function clickHandlerNav(ev) {
     ev.preventDefault();
     const selectedLink = ev.target.id;
-    contentDiv.textContent = '';
 
-    switch (selectedLink) {
-      case 'about':
-        contentDiv.append(loadAbout());
-        break;
-      default:
-        contentDiv.append(loadHomePage());
+    if (!['', 'heading'].includes(selectedLink)) {
+      contentDiv.textContent = '';
+      switch (selectedLink) {
+        case 'about':
+          contentDiv.append(loadAbout());
+          break;
+        case 'logo':
+          contentDiv.append(loadHomePage());
+          break;
+        default:
+          return;
+      }
     }
   }
 

@@ -1,13 +1,13 @@
 import './nav.css';
 import Image from './logo-ice-cream.svg';
-import { restaurantName } from '../global-vars/global-vars';
+import { restaurant } from '../global-vars/global-vars';
 
 export default function loadNav() {
   const navList = document.createElement('ul');
 
   // icon & heading (nav items)
   const heading = document.createElement('h1');
-  heading.textContent = restaurantName;
+  heading.textContent = restaurant.name;
   heading.setAttribute('id', 'heading');
   const icon = document.createElement('img');
   icon.setAttribute('id', 'logo');

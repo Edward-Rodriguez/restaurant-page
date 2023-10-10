@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "sundae.jpg",
+    "artist": "bazinga1k980",
+    "sourceLink": "https://pixabay.com/users/bazinga1k980-421871/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=437902",
+    "site": "Pixabay",
+    "siteLink": "https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=437902",
+    "alt": "Sundae ice cream with fudge and crackers in a small red cup"
+  },
+  {
+    "id": 2,
+    "name": "waffle-cones.jpg",
+    "artist": "StockSnap",
+    "sourceLink": "https://pixabay.com/users/stocksnap-894430/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2576622",
+    "site": "Pixabay",
+    "siteLink": "https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=437902",
+    "alt": "Two waffle cone ice creams, one with fudge, each held by one hand with a blurred image of a store in the background"
+  },
+  {
+    "id": 3,
+    "name": "three-scoops.jpg",
+    "artist": "binamg",
+    "sourceLink": "https://pixabay.com/users/binamg-4117808/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1932375",
+    "site": "Pixabay",
+    "siteLink": "https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=437902",
+    "alt": "Three scoops of different flavored ice cream with a cherry on top in a small glass jar on a small plate with a spoon on the side"
+  },
+  {
+    "id": 4,
+    "name": "coffee-shake.jpg",
+    "artist": "RachH",
+    "sourceLink": "https://pixabay.com/users/morningbirdphoto-129488/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=540653",
+    "site": "Pixabay",
+    "siteLink": "https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=437902",
+    "alt": "Coffee ice cream shake with foam and fudge in a tall glass with a pink straw"
+  }
+]

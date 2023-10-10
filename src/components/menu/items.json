@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Sundae",
+    "description": "Heavenly explosion of creamy vanilla ice cream, rich chocolate syrup, and delightful toppings with our irresistible sundae.",
+    "price": 5,
+    "imageId": 1
+  },
+  {
+    "name": "Waffle Cones",
+    "description": "Waffle ice cream cone, featuring a crispy and golden waffle shell filled with creamy, dreamy ice cream and topped with a sprinkle of joy.",
+    "price": 8,
+    "imageId": 2
+  },
+  {
+    "name": "Three Scoops",
+    "description": "Triple scoop delight featuring a heavenly trio of creamy vanilla, rich chocolate, and luscious strawberry flavors, all topped with a cascade of rainbow sprinkles and a cherry on top.",
+    "price": 5,
+    "imageId": 3
+  },
+  {
+    "name": "Coffee Shake",
+    "description": "Smooth and creamy coffee-infused ice cream with a splash of velvety milk and a hint of sweet caramel, topped with a dollop of whipped cream and a sprinkle of cocoa powder.",
+    "price": 7,
+    "imageId": 4
+  }
+]

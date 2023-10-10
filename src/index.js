@@ -2,6 +2,7 @@ import loadHomePage from './components/homepage/homepage';
 import loadFooter from './components/footer/footer';
 import loadNav from './components/nav/nav';
 import loadAbout from './components/about/about';
+import loadMenu from './components/menu/menu';
 import './assets/css/index.css';
 
 const displayController = (() => {
@@ -26,6 +27,9 @@ const displayController = (() => {
           break;
         case 'logo':
           contentDiv.append(loadHomePage());
+          break;
+        case 'menu':
+          contentDiv.appendChild(loadMenu());
           break;
         default:
           return;

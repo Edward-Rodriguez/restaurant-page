@@ -37,8 +37,8 @@ nav {
   justify-self: center;
 }
 
-/* @media only screen and (min-width: 1260px) {
+@media only screen and (min-width: 1260px) {
   body {
     padding: 0px 20vh;
   }
-} */
+}

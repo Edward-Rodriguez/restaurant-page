@@ -4,6 +4,7 @@ import images from './images-info.json';
 
 export default function loadMenu() {
   const menuItemsContainer = document.createElement('div');
+  menuItemsContainer.classList.add('menu-container');
   items.forEach((item) => {
     const itemDiv = itemContainer(item);
     menuItemsContainer.appendChild(itemDiv);

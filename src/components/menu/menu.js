@@ -1,6 +1,6 @@
 import './menu.css';
 import items from './items.json';
-import { default as images } from './images';
+import images from './images-info.json';
 
 export default function loadMenu() {
   const menuItemsContainer = document.createElement('div');
@@ -22,7 +22,7 @@ function itemContainer(item) {
   container.classList.add('menu-item');
   header.textContent = item.name;
   description.textContent = item.description;
-  imageElement.src = image.localpath;
+  imageElement.src = require(`./${image.name}`);
   imageElement.alt = image.alt;
   container.append(
     header,

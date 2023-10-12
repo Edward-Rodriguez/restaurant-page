@@ -20,7 +20,7 @@ export default function loadNav() {
   });
 
   // menu links (nav items)
-  const menuItems = ['About', 'Menu', 'Hours & Locations', 'Contact'];
+  const menuItems = ['About', 'Menu', 'Contact'];
   menuItems.forEach((navItem) => {
     const listItem = document.createElement('li');
     listItem.classList.add('nav-item');

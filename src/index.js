@@ -3,6 +3,7 @@ import loadFooter from './components/footer/footer';
 import loadNav from './components/nav/nav';
 import loadAbout from './components/about/about';
 import loadMenu from './components/menu/menu';
+import loadContact from './components/contact/contact';
 import './assets/css/index.css';
 
 const displayController = (() => {
@@ -31,6 +32,8 @@ const displayController = (() => {
         case 'menu':
           contentDiv.appendChild(loadMenu());
           break;
+        case 'contact':
+          contentDiv.appendChild(loadContact());
         default:
           return;
       }

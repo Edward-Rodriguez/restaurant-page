@@ -3,13 +3,14 @@
   grid-template-rows: min-content auto;
   justify-items: center;
   gap: 24px;
-  padding: 24px;
   color: rgb(46, 71, 93);
+  padding: 48px;
 }
 
 .content-grid {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   background-color: rgb(246, 249, 252);
   border: 2px solid rgb(182, 199, 214);
   border-radius: 8px;
@@ -27,5 +28,6 @@
 }
 
 .content-grid img {
+  grid-column: span 3;
   border-radius: 8px;
 }

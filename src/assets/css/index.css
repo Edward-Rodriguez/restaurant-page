@@ -35,10 +35,11 @@ nav {
 #content {
   grid-area: content;
   justify-self: center;
+  width: 100%;
 }
 
 @media only screen and (min-width: 1366px) {
   body {
-    padding: 0px 20vh;
+    padding: 0px 10vh;
   }
 }
